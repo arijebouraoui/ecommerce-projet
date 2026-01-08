@@ -1,0 +1,122 @@
+/* Categories Page */
+.categories-page {
+  min-height: 70vh;
+  padding: 40px 20px;
+}
+
+.categories-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-radius: 15px;
+  padding: 60px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.6s;
+}
+
+.category-card:hover::before {
+  left: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.4);
+}
+
+/* ✅ Couleurs qui matchent ton app Bootstrap */
+.category-card:nth-child(1) {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Bleu Bootstrap */
+}
+
+.category-card:nth-child(2) {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%); /* Gris Bootstrap */
+}
+
+.category-card:nth-child(3) {
+  background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%); /* Cyan Bootstrap */
+}
+
+.category-card:nth-child(4) {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%); /* Vert Bootstrap */
+}
+
+.category-card:nth-child(5) {
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%); /* Jaune Bootstrap */
+}
+
+.category-card:nth-child(6) {
+  background: linear-gradient(135deg, #dc3545 0%, #bd2130 100%); /* Rouge Bootstrap */
+}
+
+.category-card:nth-child(n+7) {
+  background: linear-gradient(135deg, #6610f2 0%, #520dc2 100%); /* Violet Bootstrap */
+}
+
+.category-content {
+  position: relative;
+  z-index: 1;
+}
+
+.category-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.category-card:hover h3 {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-card {
+    padding: 40px 20px;
+  }
+  
+  .category-content h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+/* Admin Users Page Styles */
+
+.users-table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.users-table-container table {
+  margin: 0;
+}
+
+.users-table-container th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.users-table-container td {
+  vertical-align: middle;
+  padding: 15px 10px;
+}
+
+.users-table-container .badge {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.users-table-container tbody tr {
+  transition: all 0.3s ease;
+}
+
+.users-table-container tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
