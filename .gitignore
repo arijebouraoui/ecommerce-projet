@@ -1,13 +1,3 @@
-# Backend
-node_modules/
+node_modules
 .env
-
-# Frontend
-client/node_modules/
-client/dist/
-client/build/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+client/node_modules
