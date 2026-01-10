@@ -240,9 +240,7 @@ The application will be available at:
 
 \*\*Arije Bouraoui\*\*
 
-\- GitHub: \[@arijebouraoui](https://github.com/arijebouraoui)
-
-\- Project Link: http://localhost:5173/
+\- Email: arije.bouraoui@polytechnicien.tn
 
 ---
 
