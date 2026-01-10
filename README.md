@@ -242,9 +242,7 @@ The application will be available at:
 
 \- GitHub: \[@arijebouraoui](https://github.com/arijebouraoui)
 
-\- Project Link: \[https://github.com/arijebouraoui/ecommerce-projet](https://github.com/arijebouraoui/ecommerce-projet)
-
-
+\- Project Link: http://localhost:5173/
 
 ---
 
